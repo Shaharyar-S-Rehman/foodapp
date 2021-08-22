@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5a2eeb8c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyDAp5_VB-nZA_PU73E5jSo4enBdglso-Bs",
+            authDomain: "food-delivery-applicatio-db0ed.firebaseapp.com",
+            projectId: "food-delivery-applicatio-db0ed",
+            storageBucket: "food-delivery-applicatio-db0ed.appspot.com",
+            messagingSenderId: "430595582034",
+            appId: "1:430595582034:web:b4287a992c86c648d2178b",
+            measurementId: "G-52F0HJXRNH"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      // firebase.analytics();
+    </script>
+</head>
+
+<body onload="dash()">
+
+    <div class="container bdy">
+        <div class="row justify-content-center">
+            <div class="col-5 justify-content-center signupDiv">
+
+                <h1 class="signhead">dashboard</h1>
+
+                <div class="form-group">
+                    <label for="itemname">Item Name</label>
+                    <input type="text" placeholder="Enter Your Item Name" class="form-control" id="itemname">
+                </div>
+                <div class="form-group">
+                    <label for="price">Price: </label>
+                    <input type="number" class="form-control" placeholder="Enter price" id="price"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="category" class="dashcat">Category: </label> 
+                    <!-- <input type="email" class="form-control" placeholder="Enter Category" id="category"
+                        aria-describedby="emailHelp"> -->
+
+                    <select name="cars" id="category">;
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <!-- <img src="sheh.jpg" id="pic" alt="img" width="200" height="200">
+                    <input type="file" id="hidden" onclick="readUrl(this)"> -->
+                </div>
+                <div class="form-group">
+                    <label for="typdel" class="dashdeli">Delivery Category: </label>
+                    <!-- <input type="email" class="form-control" placeholder="Enter Delivery Category" id="typdel"
+                        aria-describedby="emailHelp"> -->
+                    <select name="cars" id="typdel">
+                        <option value="volvo">free</option>
+                        <option value="saab">paid</option>
+                    </select>
+                </div>
+                <button onclick="dashboard()" type="submit" class="btn dashbtn btnindex btn-dark">Submit</button>
+            </div>
+        </div>
+       
+        
+    </div>
+    <br>
+    <br>
+    <div class="row dashcard">
+        <ul id="list" class="col-md-4 deshli w-50">
+            <li id="li" class="">
+
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="dashboardapp.js"></script>
+</body>
+
+</html>

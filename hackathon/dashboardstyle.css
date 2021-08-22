@@ -1,0 +1,53 @@
+body{
+    background-color: whitesmoke;
+
+}
+.signupDiv{
+    background-color: rgb(237, 241, 241) !important;
+    margin-top: 5%;
+    /* text-align: center; */
+    /* border-bottom: 2px solid black; */
+    box-shadow: 5px 5px 5px gray;
+    /* border-radius: 50px 5px 50px 5px; */
+}
+.dashbtn{
+    margin-left: 30%;
+}
+.list{
+    
+    text-decoration: none !important;
+    border: 2px solid black !important;
+}
+.drpli{
+    text-decoration: none;
+}
+
+/* .bdy{
+    background-color: black;
+} */
+.deshli{
+    text-decoration: none !important;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+
+select{
+    width: 50%;
+    
+}
+.dashdeli{
+    margin-right: 5%;
+}
+.dashcat{
+    margin-right: 22%;
+}
+.lidash{
+    background-color: wheat;
+
+}
+.dashcard{
+    text-decoration: none!important;
+    margin-left: 5%;
+    
+}
